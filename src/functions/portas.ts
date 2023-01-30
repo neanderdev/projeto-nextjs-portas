@@ -8,3 +8,18 @@ export function criarPortas(qtde: number, selecionada: number): ModelPorta[] {
     return new ModelPorta(numero, temPresente);
   });
 }
+
+export function atualizarPortas(
+  portas: ModelPorta[],
+  portaModificada: ModelPorta
+): ModelPorta[] {
+  return portas.map((portaAtual) => {
+    const igualModificada = portaAtual.numero === portaModificada.numero;
+
+    if (igualModificada) {
+      return portaModificada;
+    } else {
+      return portaModificada.aberta ? portaAtual : portaAtual.desmarcar();
+    }
+  });
+}
