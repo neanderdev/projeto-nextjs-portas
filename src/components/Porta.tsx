@@ -3,11 +3,11 @@ import styles from '../styles/Porta.module.css';
 import ModelPorta from '../model/porta';
 
 interface PortaProps {
-    porta: ModelPorta;
+    value: ModelPorta;
 }
 
 export default function Porta(props: PortaProps) {
-    const { porta } = props;
+    const porta = props.value;
 
     const selecionada = porta.selecionada ? styles.selecionada : '';
 
