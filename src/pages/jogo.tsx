@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { useState } from 'react';
 
 import styles from '../styles/Jogo.module.css';
@@ -26,7 +27,11 @@ export default function Jogo() {
             </div>
 
             <div className={styles.botoes}>
-                
+                <Link href='/'>
+                    <button>
+                        Reiniciar Jogo
+                    </button>
+                </Link>
             </div>
         </div>
     );
