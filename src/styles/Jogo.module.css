@@ -1,0 +1,17 @@
+#jogo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.portas {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.botoes {
+}
