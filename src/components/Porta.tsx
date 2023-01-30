@@ -6,6 +6,8 @@ export default function Porta(props: any) {
             <div className={styles.estrutura}>
                 <div className={styles.porta}>
                     <div className={styles.numero}>1</div>
+
+                    <div className={styles.macaneta}></div>
                 </div>
             </div>
 
