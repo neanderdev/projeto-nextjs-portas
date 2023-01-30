@@ -32,6 +32,10 @@ export default class ModelPorta {
     return this.#aberta;
   }
 
+  get fechada() {
+    return !this.#aberta;
+  }
+
   desmarcar() {
     const selecionada = false;
 
